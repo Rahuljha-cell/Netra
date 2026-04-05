@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Bold, clean eye shape — reads at any size -->
+
+  <!-- Eye shape — filled -->
+  <path d="M 16 100 Q 58 38, 100 38 Q 142 38, 184 100 Q 142 162, 100 162 Q 58 162, 16 100 Z"
+        fill="#1A237E"/>
+
+  <!-- Eye outline — white stroke for dark backgrounds -->
+  <path d="M 16 100 Q 58 38, 100 38 Q 142 38, 184 100 Q 142 162, 100 162 Q 58 162, 16 100 Z"
+        fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- Iris ring -->
+  <circle cx="100" cy="100" r="38" fill="#283593"/>
+  <circle cx="100" cy="100" r="38" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+
+  <!-- Map pin as pupil — the key symbol -->
+  <path d="M 100 78 C 89 78, 80 86, 80 96 C 80 108, 100 124, 100 124 C 100 124, 120 108, 120 96 C 120 86, 111 78, 100 78 Z"
+        fill="#FF8F00"/>
+
+  <!-- Pin dot -->
+  <circle cx="100" cy="94" r="6" fill="#FFFFFF"/>
+
+  <!-- Subtle highlight -->
+  <ellipse cx="90" cy="88" rx="5" ry="3.5" fill="#FFFFFF" opacity="0.3"/>
+</svg>
