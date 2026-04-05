@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: netra-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+
+  - type: web
+    name: netra-ai-service
+    runtime: docker
+    rootDir: ai-service
+    dockerfilePath: ai-service/Dockerfile
+    dockerContext: ai-service

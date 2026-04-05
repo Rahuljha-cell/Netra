@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from transformers import pipeline
+import os
 import re
 
 app = FastAPI(title="Netra AI Classification Service")
@@ -191,4 +192,4 @@ def analyze_image(req: dict):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8001)
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
